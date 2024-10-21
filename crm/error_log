@@ -1,0 +1,5 @@
+[17-Oct-2024 12:28:26 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /home/bykojourneys/public_html/crm/model/model.php:36
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/index.php(2): include()
+#1 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/model.php on line 36

@@ -1,0 +1,2 @@
+city_id,Hotel_name,Mobile,landline,Email,Contact Person ,Emergency Contact  No,Hotel address,State/country_id,Website,Bank Name,Account Type,Account No,Branch,IFSC/swift Code,TaxNo,Personal Identification No(PIN),Hotel Category,Child Without Bed From Age,Child Without Bed To Age,Child With Bed From Age,Child With Bed To  Age,Hotel Type,Hotel Description,Opening Balance,Balance Side
+4,Panchami,8745124578,2014578,ram@gmail.com,Ram,20124578,Pune,1,www.panchmi.com,SBI,Ram,2012457,Pashan,sbi457,212,12,2 Star,2,5,6,11,Business Hotels,,40000,Credit

@@ -1,0 +1,6 @@
+[17-Oct-2024 17:13:19 Asia/Kolkata] PHP Fatal error:  Uncaught TypeError: fwrite(): Argument #1 ($stream) must be of type resource, bool given in /home/bykojourneys/public_html/crm/view/backup_installer/installer/installer_init.php:98
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/view/backup_installer/installer/installer_init.php(98): fwrite()
+#1 /home/bykojourneys/public_html/crm/view/backup_installer/installer/installer_init.php(106): backup_itours_db()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/view/backup_installer/installer/installer_init.php on line 98

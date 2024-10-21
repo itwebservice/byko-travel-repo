@@ -1,0 +1,60 @@
+[17-Oct-2024 12:34:26 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 13:48:54 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 16:57:04 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:03:42 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:06:50 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:12:48 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:14:12 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:14:58 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:16:21 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85
+[17-Oct-2024 17:17:09 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'bykojourneys_crm.office_expense_master' doesn't exist in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php:85
+Stack trace:
+#0 /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php(85): mysqli_query()
+#1 /home/bykojourneys/public_html/crm/view/dashboard/admin/monthly_expense_and_revenue.php(16): mysqlQuery()
+#2 {main}
+  thrown in /home/bykojourneys/public_html/crm/model/app_settings/app_generic_functions.php on line 85

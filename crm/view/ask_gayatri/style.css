@@ -1,0 +1,286 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Poppins, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-container {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  
+  .chat-header {
+    background-color: var(--sys-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .chat-header h1 {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+  .chat-input input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .chat-input textarea {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .chat-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: var(--sys-color);
+  }
+  
+  .message-box {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .message {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    clear: both;
+  }
+  
+  .received {
+    float: left;
+    display: block;
+    max-width: 600px;
+  }
+  
+  .sent {
+    float: right;
+    position: relative;
+    display: block;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--sys-color);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .timestamp-send {
+    float: right;
+    color: darkgrey;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .text {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .sent .text {
+    background-color: var(--sys-color);
+    color: #fff;
+  }
+  
+  .video-section {
+    /* height: 100%; */
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .video-section video {
+    border-radius: 15px;
+  }
+  
+  /* Tab section start */
+ .tab-box {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .tabs {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 0px;
+    list-style: none;
+    background: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .tabs a {
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition-duration: 0.6s;
+  }
+  
+  .tabs a.active {
+    color: #ffffff;
+  }
+  
+  .tabs a i {
+    margin-right: 5px;
+  }
+  
+  .tabs .selector {
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    border-radius: 50px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+    background: #05abe0;
+    background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+    background: -webkit-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+    background: linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
+  } 
+  
+  /* Tab section end */
+ /* Style for the custom file input */
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Style for the file input, hide it visually */
+#file {
+  display: none;
+}
+.message .text {
+  overflow: auto; /* or overflow: hidden; */
+  padding: 10px; /* Adjust padding as needed */
+  margin: 10px 0; /* Adjust margin as needed */
+}
+.message .text ol {
+  list-style-type: decimal; /* Style of the ordered list */
+  padding-left: 20px; /* Adjust the left padding as needed */
+  margin: 0; /* Remove default margin */
+}
+
+.message .text li {
+  margin: 5px 0; /* Adjust margin as needed */
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 115px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+  .showm {
+    display: block;
+}
+  .smenu-left i {
+    color: #c1c1c1;
+}
+.smenu-left {
+    position: relative;
+    margin-right: 5px;
+    top: 15px;
+    float: left;
+    cursor: pointer;
+}
+.smenu-right {
+    position: relative;
+    margin-left: 5px;
+    top: 15px;
+    float: right;
+    cursor: pointer;
+}
+.smenu-right i {
+    color: #c1c1c1;
+}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.reply-input {
+    display: none;
+    padding: 10px;
+    padding-left: 0px;
+    align-items: center;
+    /* border-top: 1px solid #ccc; */
+    height: 60px;
+    background: #f0f0f0;
+}
+.show-box {
+    display: block;
+}
+.clse-btn {
+    position: absolute;
+    right: 25px;
+    margin-top: 8px;
+}

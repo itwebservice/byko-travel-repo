@@ -63,7 +63,8 @@
                     </tr>
                     <script>
                     $('#city_id').select2({
-                        minimumInputLength: 1
+                        minimumInputLength: 1,
+                        dropdownParent: $('#tariff_save_modal')
                     });
                     $('#to_date,#from_date').datetimepicker({
                         timepicker: false,

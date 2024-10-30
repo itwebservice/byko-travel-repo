@@ -228,7 +228,9 @@ $('#exc_save_modal').modal('show');
 $('#payment_date, #due_date,#balance_date').datetimepicker({ timepicker:false, format:'d-m-Y' });
 $('#acurrency_code').select2();
 
-$('#customer_id').select2();
+$('#customer_id').select2({
+	dropdownParent: $('#exc_save_modal')
+});
 function business_rule_load(){
 	get_auto_values('balance_date','exc_issue_amount','payment_mode','service_charge','markup','save','true','service_charge');
 }

@@ -206,7 +206,9 @@
 
 <script>
 
-$('#plane_from_location1,#plane_to_location1,#train_from_location1,#train_to_location1').select2();
+$('#plane_from_location1,#plane_to_location1,#train_from_location1,#train_to_location1').select2({
+	dropdowmParent: $('#quotation_save_modal')
+});
 event_airport('tbl_package_tour_quotation_dynamic_plane');
 city_lzloading('.train_from', '*From', true);
 city_lzloading('.train_to', '*To', true);

@@ -90,7 +90,7 @@ $bike_id = $sq_query['bike_id'];
                           <td><input type="hidden" id="entry_id" name="entry_id" value="<?= $row_tariffentries['tariff_id'] ?>" /></td>
                       </tr>
                       <script>
-                        $('#city_id<?= $count ?>-u').select2({minimumInputLength:1});
+                        $('#city_id<?= $count ?>-u').select2({minimumInputLength:1, dropdownParent:$('#tariff_update_modal')});
                         $('#to_date<?= $count ?>-u,#from_date<?= $count ?>-u').datetimepicker({ timepicker:false, format:'d-m-Y' });
                       </script>
                     <?php } ?>
@@ -196,6 +196,7 @@ $bike_id = $sq_query['bike_id'];
 
 <script>
 $('#tariff_update_modal').modal('show');
+
 $('#agent_type').select2();
 $('#to_dateo,#from_dateo').datetimepicker({ timepicker:false, format:'d-m-Y' });
 $('#bike_id1,#currency_code2').select2();

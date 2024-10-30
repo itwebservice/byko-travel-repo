@@ -255,7 +255,9 @@ $branch_status = $_POST['branch_status'];
 <script>
 $('#save_modal').modal('show');
 
-$('#customer_id').select2();
+$('#customer_id').select2({
+    dropdownParent: $('#save_modal')
+});
 
 $('#payment_date,#balance_date').datetimepicker({
     timepicker: false,

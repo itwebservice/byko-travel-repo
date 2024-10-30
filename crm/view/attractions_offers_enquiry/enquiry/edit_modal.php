@@ -243,7 +243,9 @@ $("#txt_enquiry_date_u").datetimepicker({
 $("#txt_followup_date_u").datetimepicker({
     format: 'd-m-Y H:i'
 });
-
+$('#country_code_val').seelct2({
+    dropdownParent: $('#enquiry_edit_modal')
+});
 $('#country_code1').val($('#country_code_val').val());
 $('#country_code1').trigger('change');
 $('#enquiry_loader').append('<div class="loader"></div>');

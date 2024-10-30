@@ -459,7 +459,9 @@ else if($reflections[0]->tax_apply_on == '3') {
 
 <script>
 $('#booking_update_modal').modal('show');
-$('#city_id_u1, #city_id_u1_f, #customer_id1,#acurrency_code1').select2();
+$('#city_id_u1, #city_id_u1_f, #customer_id1,#acurrency_code1').select2({
+    dropdownParent: $('#booking_update_modal')
+});
 $('#booking_date1,#due_date1,#booking_date1').datetimepicker({
     timepicker: false,
     format: 'd-m-Y'

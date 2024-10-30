@@ -190,7 +190,9 @@ $year = date('Y');
 <script>
 $('#save_modal').modal('show');
 $(document).ready(function() {
-    $('#enquiry_id, #service_id1, #city_name').select2();
+    $('#enquiry_id, #service_id1, #city_name').select2({
+        dropdownParent: $('#save_modal')
+    });
     $('#quotation_date,#from_date,#to_date').datetimepicker({
         timepicker: false,
         format: 'd-m-Y'

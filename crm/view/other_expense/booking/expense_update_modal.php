@@ -95,7 +95,9 @@ $q_expense = mysqli_fetch_assoc(mysqlQuery("select * from other_expense_master w
 
 <script>
 $('#expense_update_modal').modal('show');
-$('#expense_type2,#supplier_type2').select2();
+$('#expense_type2,#supplier_type2').select2({
+  dropdownParent: $('#expense_update_modal')
+});
 $('#payment_date1,#due_date1,#booking_date1').datetimepicker({ timepicker:false, format:'d-m-Y' });
 
 

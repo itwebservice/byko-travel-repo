@@ -184,7 +184,9 @@ $branch_status = $_POST['branch_status'];
 
 <script>
 $('#enquiry_save_modal').modal('show');
-$('#reference_id,#assigned_emp_id,#country_code').select2();
+$('#reference_id,#assigned_emp_id,#country_code').select2({
+    dropdownParent: $('#enquiry_save_modal')
+});
 $("#txt_enquiry_date").datetimepicker({
     timepicker: false,
     format: 'd-m-Y'

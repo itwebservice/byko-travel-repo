@@ -387,7 +387,9 @@ else if($reflections[0]->tax_apply_on == '3') {
 
 <script src="<?php echo BASE_URL ?>js/app/footer_scripts.js"></script>
 <script>
-$('#customer_id1,#vcurrency_code1').select2();
+$('#customer_id1,#vcurrency_code1').select2({
+    dropdownParent: $('#visa_update_modal')
+});
 $('#due_date1,#balance_date1').datetimepicker({
     timepicker: false,
     format: 'd-m-Y'

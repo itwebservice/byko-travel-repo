@@ -405,7 +405,9 @@
 <script src="<?= BASE_URL ?>js/ajaxupload.3.5.js"></script>
 
 <script>
-$('#visa_country_name, #location_id,#country_code').select2();
+$('#visa_country_name, #location_id,#country_code').select2({
+    dropdownParent:$('#save_modal')
+});
 $('#date_of_join,#issue_date,#expiry_date').datetimepicker({
     timepicker: false,
     format: 'd-m-Y'

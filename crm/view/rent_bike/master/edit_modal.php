@@ -129,6 +129,9 @@ $('#pickup_time1,#drop_time1').datetimepicker({
     format: "H:i"
 });
 $('#vehicle_type1').select2();
+$('#bike_type1').select2({
+    dropdownParent: $('#update_modal')
+})
 upload_vehicle_image1();
 function upload_vehicle_image1() {
 

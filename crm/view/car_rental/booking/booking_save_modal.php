@@ -409,7 +409,9 @@ $branch_status = $_POST['branch_status'];
 
 <script>
 $('#booking_save_modal').modal('show');
-$('#quotation_id,#customer_id').select2();
+$('#quotation_id,#customer_id').select2({
+    dropdownParent: $('#booking_save_modal')
+});
 $('#from_date,#to_date,#traveling_date').datetimepicker({
     timepicker: false,
     format: 'd-m-Y'

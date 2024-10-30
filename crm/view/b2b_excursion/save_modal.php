@@ -387,7 +387,9 @@ include "../../model/model.php";
 <script src="<?= BASE_URL ?>js/app/field_validation.js"></script>
 <script>
 $('#save_modal').modal('show');
-$('#off_days,#currency_code,#agent_type,#transfer_option').select2();
+$('#off_days,#currency_code,#agent_type,#transfer_option').select2({
+    dropdownParent: $('#save_modal')
+});
 $('#rep_time').datetimepicker({
     datepicker: false,
     format: 'H:i A',

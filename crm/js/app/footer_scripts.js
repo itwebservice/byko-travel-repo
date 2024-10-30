@@ -476,8 +476,11 @@ function city_lzloading(element, placeholder = "City Name", valueasText = false)
 	var base_url = $("#base_url").val();
 	url = base_url + '/view/load_data/generic_city_loading.php';
 	$(element).append($("<option></option>").attr("value", "").text(placeholder));
+	var dropdownParent  = $(element).closest('.modal').attr('id');
+
 	$(element).select2({
 		placeholder: placeholder,
+		dropdownParent: $("#" + dropdownParent),
 		ajax: {
 			url: url,
 			dataType: 'json',

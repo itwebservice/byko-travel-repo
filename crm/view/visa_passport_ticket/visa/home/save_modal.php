@@ -264,7 +264,9 @@ $branch_status = $sq['branch_status'];
 		minDate: tom,
 		format: 'd-m-Y'
 	});
-	$('#customer_id').select2();
+	$('#customer_id').select2({
+		dropdownParent: $('#visa_save_modal')
+	});
 
 	function total_fun() {
 

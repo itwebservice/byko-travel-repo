@@ -152,6 +152,9 @@ $branch_status = $_POST['branch_status'];
 <script src="<?= BASE_URL ?>js/app/footer_scripts.js"></script>
 <script>
 $('#v_payment_save_modal').modal('show');
+$('#estimate_id').select2({
+  dropdownParent: $('#v_payment_save_modal')
+});
 $('#payment_date').datetimepicker({timepicker:false, format:'d-m-Y'});
 
 payment_evidence_upload();

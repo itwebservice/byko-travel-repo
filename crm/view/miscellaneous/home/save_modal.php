@@ -254,7 +254,9 @@ $('#appointment1,#expiry_date1').datetimepicker({
 	minDate: tom,
 	format: 'd-m-Y'
 });
-$('#customer_id').select2();
+$('#customer_id').select2({
+	dropdownParent: $('#visa_save_modal')
+});
 
 function business_rule_load() {
 	get_auto_values('balance_date', 'visa_issue_amount', 'payment_mode', 'service_charge', 'markup', 'save', 'true', 'service_charge');

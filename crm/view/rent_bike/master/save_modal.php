@@ -92,7 +92,9 @@
     </div>
 </form>
 <script>
-$('#bike_type').select2();
+$('#bike_type').select2({
+    dropdownParent: $('#master_save_modal')
+});
 $('#pickup_time,#drop_time').datetimepicker({
     datepicker: false,
     timepicker: true,

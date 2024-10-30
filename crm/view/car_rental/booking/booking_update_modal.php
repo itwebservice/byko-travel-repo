@@ -398,7 +398,9 @@ else if($reflections[0]->tax_apply_on == '3') {
 
 
 <script>
-$('#vendor_id1, #customer_id1').select2();
+$('#vendor_id1, #customer_id1').select2({
+    dropdownParent: $('#booking_update_modal')
+});
 $('#from_date1,#to_date1').datetimepicker({
     timepicker: false,
     format: 'd-m-Y'

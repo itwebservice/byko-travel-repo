@@ -153,7 +153,9 @@ $branch_admin_id = $_SESSION['branch_admin_id'];
 <script src="<?php echo BASE_URL ?>js/app/footer_scripts.js"></script>
 <script>
 $('#expense_save_modal').modal('show');
-$('#expense_type,#supplier_type').select2();
+$('#expense_type,#supplier_type').select2({
+  dropdownParent: $('#expense_save_modal')
+});
 $('#payment_date,#due_date,#booking_date').datetimepicker({ timepicker:false, format:'d-m-Y' });
 //Payment Evidence  Upload
 function payment_evidance_upload()

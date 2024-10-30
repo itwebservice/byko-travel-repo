@@ -204,7 +204,9 @@ $exc_name = ($sq_exc['excursion_name']);
 														<td><input type="hidden" id="entry_id" name="entry_id" value='<?= $row_basic['entry_id'] ?>' /></td>
 													</tr>
 													<script>
-														$('#transfer_option-u<?= $count ?>').select2();
+														$('#transfer_option-u<?= $count ?>').select2({
+															dropdownParent: $('#update_modal')
+														});
 														$('#from_date_basic-u<?= $count ?>,#to_date_basic-u<?= $count ?>').datetimepicker({ timepicker:false, format:'d-m-Y' });
 													</script>
 											<?php $count++; } }?>
@@ -337,7 +339,9 @@ $exc_name = ($sq_exc['excursion_name']);
 </form>
 <script>
 $('#update_modal').modal('show');
-$('#currency_code1,#agent_type,#off_days,#transfer_option').select2();
+$('#currency_code1,#agent_type,#off_days,#transfer_option').select2({
+	dropdownParent: $('#update_modal')
+});
 $('#rep_time').datetimepicker({ datepicker:false, format:'H:i A',showMeridian: true });
 $('#to_date,#from_date,#to_date_c,#from_date_c,#from_date_basic,#to_date_basic').datetimepicker({ timepicker:false, format:'d-m-Y' });
 city_lzloading('#city_id1');

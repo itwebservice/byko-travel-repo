@@ -93,7 +93,9 @@ include "../../../model/model.php";
 <script>
 $('#tariff_save_modal').modal('show');
 $('#agent_type').select2();
-$('#bike_id,#currency_code1').select2();
+$('#bike_id,#currency_code1').select2({
+  dropdownParent: $('#tariff_save_modal')
+});
 $('#to_dateo,#from_dateo').datetimepicker({ timepicker:false, format:'d-m-Y' });
 //Airport Name dropdown
 function seasonal_csv(){

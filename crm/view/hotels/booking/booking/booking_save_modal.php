@@ -346,7 +346,9 @@ $tcs_readonly = ($sq_tcs['calc'] == '0') ? 'readonly' : '';
 
 <script>
 $('#booking_save_modal').modal('show');
-$('#customer_id,#quotation_id').select2();
+$('#customer_id,#quotation_id').select2({
+    dropdownParent: $('#booking_save_modal')
+});
 $.get('../booking/inc/get_currency_dropdown.php', {quotation_id:''}, function (data) {
     $('#currency_div').html(data);
 });
